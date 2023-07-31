@@ -8,4 +8,5 @@ CREATE TABLE `log_db` (
   `iduser` int NOT NULL,
   PRIMARY KEY (`idlog`),
   KEY `FK_log_user_idx` (`iduser`),
-  CONSTRAINT `FK_log_user` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE RESTRICT ON UPDATE RESTRICT);
+  CONSTRAINT `FK_log_user` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE RESTRICT ON UPDATE RESTRICT
+);

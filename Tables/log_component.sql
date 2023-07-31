@@ -7,4 +7,5 @@ CREATE TABLE `log_component` (
   `iduser` int DEFAULT NULL,
   PRIMARY KEY (`idlog`),
   KEY `FK_log_component_user_idx` (`iduser`),
-  CONSTRAINT `FK_log_component_user` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE RESTRICT ON UPDATE RESTRICT);
+  CONSTRAINT `FK_log_component_user` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
