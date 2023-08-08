@@ -13,3 +13,12 @@ INSERT INTO `template` (`name`, `content`) VALUES ('Recuperación cotraseña', '<p
  <p>#{link}#</p>
  <p>Siga las instrucciones que all&iacute; encontrar&aacute; para cambiar la contrase&ntilde;a</p>');
 INSERT INTO `template` (`name`, `content`) VALUES ('Contraseña cambiada con éxito', '<p>Su contrase&ntilde;a ha sido cambiada con &eacute;xito</p>');
+INSERT INTO `country` (`code`, `name`) VALUES ('CO', 'Colombia');
+INSERT INTO `identification_type` (`name`) VALUES ('Cédula de ciudadanía');
+INSERT INTO `identification_type` (`name`) VALUES ('Tarjeta de identidad');
+INSERT INTO `identification_type` (`name`) VALUES ('Pasaporte');
+INSERT INTO `identification_type` (`name`) VALUES ('Nit');
+INSERT INTO `income_type` (`code`, `name`) VALUES ('CI', 'Cuota inicial');
+INSERT INTO `income_type` (`code`, `name`) VALUES ('CR', 'Credito cartera');
+INSERT INTO `income_type` (`code`, `name`) VALUES ('FC', 'Factura');
+
