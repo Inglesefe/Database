@@ -3,6 +3,8 @@ CREATE TABLE office (
   idcity int NOT NULL,
   name varchar(100) NOT NULL,
   address varchar(200) NOT NULL,
+  phone varchar(45) NOT NULL,
+  active bit(1) NOT NULL,
   PRIMARY KEY (idoffice),
   KEY FK_office_city_idx (idcity),
   CONSTRAINT FK_office_city FOREIGN KEY (idcity) REFERENCES city (idcity) ON DELETE RESTRICT ON UPDATE RESTRICT
