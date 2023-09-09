@@ -1,0 +1,21 @@
+CREATE TABLE registration (
+  idregistration int NOT NULL AUTO_INCREMENT,
+  idoffice int NOT NULL,
+  date date NOT NULL,
+  contract_number varchar(10) NOT NULL,
+  idowner int NOT NULL,
+  idbeneficiary1 int DEFAULT NULL,
+  idbeneficiary2 int DEFAULT NULL,
+  idplan int NOT NULL,
+  PRIMARY KEY (idregistration),
+  KEY FK_registration_office_idx (idoffice),
+  KEY FK_registration_owner_idx (idowner),
+  KEY FK_registration_beneficiary1_idx (idbeneficiary1),
+  KEY FK_registration_beneficiary2_idx (idbeneficiary2),
+  KEY FK_registration_plan_idx (idplan),
+  CONSTRAINT FK_registration_beneficiary1 FOREIGN KEY (idbeneficiary1) REFERENCES beneficiary (idbeneficiary) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT FK_registration_beneficiary2 FOREIGN KEY (idbeneficiary2) REFERENCES beneficiary (idbeneficiary) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT FK_registration_office FOREIGN KEY (idoffice) REFERENCES office (idoffice) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT FK_registration_owner FOREIGN KEY (idowner) REFERENCES owner (idowner) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT FK_registration_plan FOREIGN KEY (idplan) REFERENCES plan (idplan) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
