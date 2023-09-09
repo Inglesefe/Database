@@ -3,6 +3,8 @@ SELECT
 	o.idoffice,
 	o.name,
 	o.address,
+	o.phone,
+	o.active,
 	c.idcity,
 	c.name as city,
 	c.code as city_code,
