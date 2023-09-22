@@ -2,7 +2,7 @@ CREATE VIEW v_payment AS
 SELECT
 	p.idpayment,
     pt.idpaymenttype,
-    pt.name AS payment_type,
+    pt.name AS paymenttype,
     f.idfee,
     p.value,
     p.date,
