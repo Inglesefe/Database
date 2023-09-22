@@ -6,6 +6,7 @@ SELECT
  f.number,
  f.dueDate,
  it.idincometype,
+ it.code AS incometype_code,
  it.name AS incometype
 FROM
  fee f
