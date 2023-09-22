@@ -6,6 +6,7 @@ CREATE TABLE fee (
   idincometype INT NOT NULL,
   dueDate DATE NOT NULL,
   PRIMARY KEY (idfee),
+  UNIQUE KEY UK_fee (idregistration, number, idincometype),
   INDEX FK_fee_registration_idx (idregistration ASC),
   INDEX FK_fee_income_type_idx (idincometype ASC),
   CONSTRAINT FK_fee_registration FOREIGN KEY (idregistration) REFERENCES registration (idregistration) ON DELETE NO ACTION ON UPDATE NO ACTION,
