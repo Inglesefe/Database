@@ -1,5 +1,5 @@
 CREATE TABLE log_db (
-  idlog bigint NOT NULL AUTO_INCREMENT,
+  idlog int NOT NULL AUTO_INCREMENT,
   date datetime NOT NULL,
   action char(1) NOT NULL,
   idtable bigint NOT NULL,

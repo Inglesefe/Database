@@ -1,5 +1,5 @@
 CREATE TABLE notification (
-  idnotification bigint NOT NULL AUTO_INCREMENT,
+  idnotification int NOT NULL AUTO_INCREMENT,
   date datetime NOT NULL,
   `to` varchar(200) NOT NULL,
   subject varchar(200) NOT NULL,
