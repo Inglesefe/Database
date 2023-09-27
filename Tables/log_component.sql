@@ -1,5 +1,5 @@
 CREATE TABLE log_component (
-  idlog bigint NOT NULL AUTO_INCREMENT,
+  idlog int NOT NULL AUTO_INCREMENT,
   date datetime NOT NULL,
   type char(1) NOT NULL,
   controller varchar(45) NOT NULL,
